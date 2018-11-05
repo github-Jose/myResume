@@ -190,18 +190,51 @@ main > .myPortfolio{
 .myPortfolio > .wrapper{
     max-width: 930px;
     margin: 0 auto;
+    font-size: 0;
+    overflow: hidden;
 }
 .myPortfolio > .wrapper > .slip{
     width:100%;
-    border:1px solid red;
-    /* height: 100%; */
+    height: 100%;
+    display: inline-block;
+    /* border:1px solid red; */
 }
-.myPortfolio > .wrapper >.slip >img{
-    width: 100%;
-    /* height: 100%; */
+.myPortfolio > .wrapper >.slip:nth-child(6){
+    /* max-width: 100%; */
+    background:url('https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-09-610x600-1-2-2-1-1-1-610x473.jpg')center/100% 100% no-repeat;
+}
+.myPortfolio > .wrapper >.slip:nth-child(2){
+    /* max-width: 100%; */
+    background:url('https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-09-610x600-1-2-2-1-1-1-610x473.jpg')center/100% 100% no-repeat;
+}
+.myPortfolio > .wrapper >.slip:nth-child(3){
+    /* max-width: 100%; */
+    background:url('https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-06-289x281-1-2-2-1-1-1.jpg')center/100% 100% no-repeat;
+}
+.myPortfolio > .wrapper >.slip:nth-child(4){
+    /* max-width: 100%; */
+    background:url('https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/rs-thumb-610x396-1-2-2-1-1-1.jpg')center/100% 100% no-repeat;
+}
+.myPortfolio > .wrapper >.slip:nth-child(5){
+    /* max-width: 100%; */
+    background:url('https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-03-610x600-1-2-2-1-1-1-610x473.jpg')center/100% 100% no-repeat;
+}
+.myPortfolio > .wrapper >.slip:nth-child(1){
+    /* max-width: 100%; */
+    background:url('https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-03-610x600-1-2-2-1-1-1-610x473.jpg')center/100% 100% no-repeat;
 }
 @media(min-width:992px){
     .myPortfolio > .wrapper{
-        /* height: 473px; */
+        height: 473px;
+    }
+}
+@media(max-width:991px) and (min-width:767px){
+    .myPortfolio > .wrapper{
+        height: 430px;
+    }
+}
+@media(max-width:768px){
+    .myPortfolio > .wrapper{
+        height: 340px;
     }
 }
