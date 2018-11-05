@@ -8,11 +8,19 @@ body{
 }
 header{
     /* border: 1px solid green; */
-    padding: 22px 20px;
-    /* padding: 5px 20px; */
+    padding: 22px 100px;
+    /* padding: 5px 100px; */
     background: #27292E;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px 0px rgba(31,32,36,1);
+    transition: all 0.5s;
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+header.changePadding{
+    padding:6px 100px;
+    box-shadow: 0px 7px 6px 0px rgba(31,32,36,1);
 }
 .logo{
     /* border:1px solid red; */
@@ -42,9 +50,6 @@ header{
     cursor: pointer;
     /* padding: 12.5px 0; */
 }
-.header-ul li:hover::after{
-    width: 100%;
-}
 .header-ul li::after{
     content: '';
     display: block;
@@ -60,6 +65,12 @@ header{
     width: 100%;
     height: 5px;
     background-color: transparent;
+}
+.header-ul li:hover::after{
+    width: 100%;
+}
+.header-ul li.actived::after{
+    width:100%;
 }
 header .menu{
     float: right;
@@ -96,8 +107,9 @@ main > .aboutMe{
     margin: 0 auto;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     box-sizing: border-box;
-    margin-top:100px;
+    margin-top:208px;
     background-color: #35363B;
+    margin-bottom: 60px;
 }
 .aboutMe > .aboutMe-top{
     width: 100%;
@@ -115,13 +127,28 @@ main >.aboutMe>.aboutMe-top .avatar{
     float: right;
     width: 55.7%;
 }
+.aboutMe > .aboutMe-top > .introduce >h1,
+.aboutMe > .aboutMe-top > .introduce >p{
+    color: #D4D4D5;
+}
+.introduce > hr{
+    display: block;
+    height: 0;
+    border:0;
+    border-top:1px solid #47494C;
+    margin:28px 0 32px;
+}
 .introduce >dl >dt{
     float: left;
     width: 50%;
+    color: #D4D4D5;
+    margin-bottom: 24px;
 }
 .introduce >dl >dd{
     float: right;
     width: 50%;
+    color:#82878C;
+    margin-bottom: 24px;
 }
 .aboutMe > .media{
     background-color: #E8676B;
@@ -150,4 +177,31 @@ main >.aboutMe>.aboutMe-top .avatar{
 }
 .media ul li a:hover{
     background-color: #D05C60;
+}
+
+/* portfolio */
+main > .myPortfolio{
+    margin-top:208px;
+}
+.myPortfolio> h1{
+    color: #7C7D82;
+    text-align: center;
+}
+.myPortfolio > .wrapper{
+    max-width: 930px;
+    margin: 0 auto;
+}
+.myPortfolio > .wrapper > .slip{
+    width:100%;
+    border:1px solid red;
+    /* height: 100%; */
+}
+.myPortfolio > .wrapper >.slip >img{
+    width: 100%;
+    /* height: 100%; */
+}
+@media(min-width:992px){
+    .myPortfolio > .wrapper{
+        /* height: 473px; */
+    }
 }

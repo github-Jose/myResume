@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-    <header class="clearfix">
+    <header class="clearfix" id="headerNav">
         <div class="logo">
             <span>RS</span>
             <span>card</span>
@@ -28,14 +28,14 @@
                 <img src="./images/menu.png" alt="">
             </div>
         </div>
-        <ul class="header-ul clearfix">
-            <li>HOME</li>
-            <li>PORTFOLIO</li>
-            <li>RESUME</li>
+        <ul class="header-ul clearfix" id="headerUl">
+            <li class="actived" id="home">HOME</li>
+            <li id="portfolio">PORTFOLIO</li>
+            <li id="resume">RESUME</li>
         </ul>
     </header>
     <main>
-        <div class="aboutMe">
+        <div class="aboutMe" id="aboutMe" style="display:block;">
             <div class="clearfix aboutMe-top">
                 <div class="avatar">
                     <img src="./images/avatar.jpg" alt="">
@@ -82,6 +82,29 @@
                 </ul>
             </footer>
         </div>
+
+        <div class="myPortfolio" id="myPortfolio" style="display:none;">
+            <h1>PORTFOLIO</h1>
+            <div class="wrapper">
+                <div class="slip">
+                    <img src="https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-09-610x600-1-2-2-1-1-1-610x473.jpg" alt="">
+                </div>
+                <div class="slip">
+                    <img src="https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-09-610x600-1-2-2-1-1-1-610x473.jpg" alt="">
+                </div>
+                <div class="slip">
+                    <img src="https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-09-610x600-1-2-2-1-1-1-610x473.jpg" alt="">
+                </div>
+                <div class="slip">
+                    <img src="https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-09-610x600-1-2-2-1-1-1-610x473.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="experience" id="myExperience" style="display: none;">
+            resume
+        </div>
     </main>
 </body>
+<script src="./js/index.js"></script>
 </html>
