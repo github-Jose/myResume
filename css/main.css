@@ -6,6 +6,7 @@
 body{
     background-color: #27292E;
 }
+/* header */
 header{
     /* border: 1px solid green; */
     padding: 22px 100px;
@@ -101,6 +102,7 @@ header .menu > .menu-inner img{
 
 main{
     /* margin-top:10px; */
+    padding: 0 15px;
 }
 main > .aboutMe{
     max-width: 930px;
@@ -192,36 +194,82 @@ main > .myPortfolio{
     margin: 0 auto;
     font-size: 0;
     overflow: hidden;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
-.myPortfolio > .wrapper > .slip{
+.wrapper >.wrapper-cover{
     width:100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+}
+.wrapper > .pageTurning{
+    position: absolute;
+    width:58px;
+    height: 58px;
+    border:none;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    color: #27292E;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.7);
+}
+.wrapper > .pageTurning:focus{
+    outline: none;
+}
+.wrapper > .pageTurning:hover{
+    background-color: rgba(255, 255, 255, 0.5)
+}
+.wrapper >.previous{
+    top:20px;
+    right:20px;
+}
+.wrapper >.next{
+    top:98px;
+    right: 20px;
+}
+.wrapper > .wrapper-inner{
+    width:5580px;
+    height: 100%;
+    transition: all 0.3s;
+}
+.myPortfolio > .wrapper .slip{
+    width:930px;
+    height: 100%;
     display: inline-block;
+    transition: all 0.3s;
     /* border:1px solid red; */
 }
-.myPortfolio > .wrapper >.slip:nth-child(6){
+/* .myPortfolio > .wrapper .slip:nth-child(6){
+    max-width: 100%;
+    background:url('https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-09-610x600-1-2-2-1-1-1-610x473.jpg')center/100% 100% no-repeat;
+} */
+.myPortfolio > .wrapper .slip:nth-child(1){
     /* max-width: 100%; */
     background:url('https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-09-610x600-1-2-2-1-1-1-610x473.jpg')center/100% 100% no-repeat;
 }
-.myPortfolio > .wrapper >.slip:nth-child(2){
-    /* max-width: 100%; */
-    background:url('https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-09-610x600-1-2-2-1-1-1-610x473.jpg')center/100% 100% no-repeat;
-}
-.myPortfolio > .wrapper >.slip:nth-child(3){
+.myPortfolio > .wrapper .slip:nth-child(2){
     /* max-width: 100%; */
     background:url('https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-06-289x281-1-2-2-1-1-1.jpg')center/100% 100% no-repeat;
 }
-.myPortfolio > .wrapper >.slip:nth-child(4){
+.myPortfolio > .wrapper .slip:nth-child(3){
     /* max-width: 100%; */
     background:url('https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/rs-thumb-610x396-1-2-2-1-1-1.jpg')center/100% 100% no-repeat;
 }
-.myPortfolio > .wrapper >.slip:nth-child(5){
+.myPortfolio > .wrapper .slip:nth-child(4){
     /* max-width: 100%; */
     background:url('https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-03-610x600-1-2-2-1-1-1-610x473.jpg')center/100% 100% no-repeat;
 }
-.myPortfolio > .wrapper >.slip:nth-child(1){
+.myPortfolio > .wrapper .slip:nth-child(5){
     /* max-width: 100%; */
-    background:url('https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-03-610x600-1-2-2-1-1-1-610x473.jpg')center/100% 100% no-repeat;
+    background:url('https://rscard.px-lab.com/actor/wp-content/uploads/sites/6/2015/12/portfolio-thumb-09-610x600-1-2-2-1-1-1-610x473.jpg')center/100% 100% no-repeat;
 }
 @media(min-width:992px){
     .myPortfolio > .wrapper{
@@ -237,4 +285,75 @@ main > .myPortfolio{
     .myPortfolio > .wrapper{
         height: 340px;
     }
+    .wrapper > .pageTurning{
+        width: 40px;
+        height: 40px;
+    }
+    .wrapper > .next{
+        top:80px;
+    }
+}
+
+/* resume */
+main > .experience{
+    max-width: 930px;
+    margin:0 auto;
+    margin-top:208px;
+    position: relative;
+}
+.experience > h1{
+    color: #7C7D82;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.experience > .line{
+    height: 300px;
+    width:5px;
+    border-radius: 3px;
+    background-color: #4E3439;
+    position: absolute;
+    left: 50%;
+    margin-left: -2.5px;
+}
+.experience > .time{
+    width: 48%;
+    position: relative;
+    background-color: #35363B;
+    border-top:5px solid #E8676B;
+    text-align: center;
+    box-sizing: border-box;
+    /* float: left; */
+    padding:20px;
+    padding-bottom: 50px;
+    color:#7F8082;
+}
+.experience > .time > .dot{
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: #E8676B;
+}
+.experience > .time > .time-inner >.period{
+    color: #DD6367;
+    /* margin-top:20px; */
+}
+.experience > .time > .time-inner >.post{
+    color:#7F8082;
+    margin:50px 0 30px;
+}
+.experience > .timeLeft{
+    float: left;
+}
+.experience > .timeRight{
+    float: right;
+}
+.experience > .time > .dotLeft{
+    right: -5.4%;
+    top:10px;
+}
+.experience > .time > .dotRight{
+    left:-5.4%;
+    top:60px;
 }
