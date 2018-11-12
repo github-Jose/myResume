@@ -18,6 +18,7 @@ header{
     position: fixed;
     width: 100%;
     top:0;
+    z-index: 3;
 }
 header.changePadding{
     padding:6px 100px;
@@ -183,11 +184,13 @@ main >.aboutMe>.aboutMe-top .avatar{
 
 /* portfolio */
 main > .myPortfolio{
-    margin-top:208px;
+    margin-top:243px;
+    margin-bottom:110px;
 }
 .myPortfolio> h1{
     color: #7C7D82;
     text-align: center;
+    margin-bottom: 40px;
 }
 .myPortfolio > .wrapper{
     max-width: 930px;
@@ -383,5 +386,154 @@ main > .experience>.workExperience{
     top:45px;
 }
 /* 教育经历 */
-
+main > .experience>.education{
+    max-width: 930px;
+    margin:0 auto;
+    /* border: 1px solid red; */
+    margin-top: 98px;
+}
+.experience > .education >h1{
+    color: #7C7D82;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+.education > .line{
+    height: 160px;
+    width:5px;
+    border-radius: 3px;
+    background-color: #4E3439;
+    position: absolute;
+    left: 50%;
+    margin-left: -2.5px;
+    margin-top:60px;
+}
+.education > .time{
+    width: 46%;
+    position: relative;
+    background-color: #35363B;
+    border-top:5px solid #E8676B;
+    text-align: center;
+    box-sizing: border-box;
+    padding:20px;
+    /* padding-bottom: 50px; */
+    color:#7F8082;
+    margin-top:20px;
+    box-shadow: 0px 0px 8px -1px rgba(30,32,36,1);
+}
+.education > .timeLeft{
+    float: left;
+}
+.education > .timeRight{
+    float: right;
+}
+.education > .rightFirst{
+    margin-top:60px;
+}
+.education > .leftFirst{
+    margin-top:0px;
+}
+.education> .time > .dot{
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: #E8676B;
+}
+.education > .time > .dotLeft{
+    right: -9.8%;
+    top:55px;
+}
+.education > .time > .dotRight{
+    left:-9.8%;
+    top:60px;
+}
+.education > .time > .triangle{
+    display: inline-block;
+    width:20px;
+    height: 0;
+    border:20px solid transparent;
+    position: absolute;
+}
+.education > .time >.leftTriangle{
+    border-left: 20px solid #35363B;
+    right:-14%;
+    top:40px;
+}
+.education > .time >.rightTriangle{
+    border-right: 20px solid #35363B;
+    left:-14%;
+    top:45px;
+}
+.education > .time >.time-inner{
+    text-align: left;
+}
+.education > .time >.time-inner>.period{
+    color: #DD6367;
+}
+.education > .time > .time-inner >.post{
+    color:#B6B6B6;
+    margin:20px 0 30px;
+    font-size: 20px;
+}
+/* Professional Skills */
+main>.experience>.skills{
+    max-width: 930px;
+    margin:0 auto;
+    margin-bottom: 80px;
+}
+.experience > .skills>h1{
+    text-align: center;
+    margin-top:98px;
+    color: #7C7D82;
+    margin-bottom: 30px;
+}
+.experience > .skills >.skills-inner{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 45px 0 45px;
+    background-color: #35363B;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+.skills > .skills-inner > ul li:nth-child(even){
+    float: right;
+}
+.skills > .skills-inner > ul li:nth-child(odd){
+    float: left;
+}
+.skills > .skills-inner > ul li{
+    width: 48%;
+    margin-bottom: 37px;
+}
+.skills-inner>ul >li>.progressBar{
+    width: 100%;
+    background-color: #593F44;
+    height: 5px;
+    border-radius: 3px;
+    margin-top:10px;
+}
+.skills-inner>ul >li>.progressBar>.Bar{
+    height: 100%;
+    border-radius: 3px;
+    background-color: #E8676B;
+}
+.skills-inner>ul >li:nth-child(1) .Bar{
+    width: 70%;
+}
+.skills-inner>ul >li:nth-child(2) .Bar{
+    width: 80%;
+}
+.skills-inner>ul >li:nth-child(3) .Bar{
+    width: 90%;
+}
+.skills-inner>ul >li:nth-child(4) .Bar{
+    width: 75%;
+}
+.skills-inner>ul >li:nth-child(5) .Bar{
+    width: 85%;
+}
+.skills-inner>ul >li:nth-child(6) .Bar{
+    width: 82%;
+}
 
